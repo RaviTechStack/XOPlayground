@@ -1,0 +1,118 @@
+nav{
+    width: 100%;
+    padding: .6rem .5rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+.Container{
+    margin-top: 5rem;
+    width: 100%;
+    height: fit-content;
+    padding: .8rem .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.gamecontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    height: 50vh;
+}
+.boxes{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+.boxes:active{
+    background-color: rgb(202, 202, 202);
+}
+.text{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    font-size: 2rem;
+}
+.win{
+    background-color: rgb(239, 139, 139);
+    text-decoration: line-through;
+}
+.bt-0{
+    border-top: 0;
+
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+
+.gameInfo h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.gameInfo p{
+    font-size: 1.2rem;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: .6rem 0;
+    transition: all .1s linear;
+}
+.gameInfo p span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .3rem .65rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.winnerBg{
+    width: fit-content;
+    padding: .3rem .5rem;
+    border-radius: .6rem;
+    background-color: rgb(255, 255, 169);
+    color: rgb(100, 18, 18) !important;
+    border: 1px solid rgb(102, 102, 2);
+    font-weight: 600;
+    font-size: larger;
+    box-shadow: 1px 1px 4px gray;
+}
+.hide{
+    display: none;
+}
+.gameInfo button{
+    padding: .4rem .8rem;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    margin-top: .5rem;
+}
+
+@media (max-width: 1150px) {
+    .Container{
+        flex-direction: column;
+    }
+    .gamecontainer{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1.8rem;
+    }
+    
+}
