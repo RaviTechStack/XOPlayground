@@ -95,12 +95,13 @@ nav{
     display: none;
 }
 .gameInfo button{
-    padding: .4rem .8rem;
+    padding: .5rem 1.2rem;
     background-color: blueviolet;
     color: white;
     font-weight: 400;
     font-size: 1.2rem;
     border: none;
+    border-radius: 20px;
     outline: none;
     margin-top: .5rem;
 }
@@ -111,6 +112,7 @@ nav{
     }
     .Container{
         flex-direction: column;
+        margin-top: .5rem;
     }
     .gamecontainer{
         width: 100%;
