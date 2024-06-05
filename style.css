@@ -82,7 +82,7 @@ nav{
 }
 .winnerBg{
     width: fit-content;
-    padding: .3rem .5rem;
+    padding: .3rem .9rem;
     border-radius: .6rem;
     background-color: rgb(255, 255, 169);
     color: rgb(100, 18, 18) !important;
@@ -106,6 +106,9 @@ nav{
 }
 
 @media (max-width: 1150px) {
+    nav{
+        display: none;
+    }
     .Container{
         flex-direction: column;
     }
